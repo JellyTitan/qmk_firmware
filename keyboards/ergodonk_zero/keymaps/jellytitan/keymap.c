@@ -88,32 +88,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
     [_RAISE] = LAYOUT_split_6x9_6(
                   KC_TRNS , KC_TRNS , KC_TRNS , KC_TRNS , KC_TRNS , KC_TRNS , KC_TRNS ,                                 KC_TRNS , KC_TRNS , KC_TRNS , KC_TRNS , KC_TRNS , KC_TRNS , KC_TRNS,
-		          RGB_TOG , KC_ACL0 , KC_ACL1 , KC_ACL2 , KC_TRNS , KC_TRNS , KC_TRNS , KC_TRNS,               KC_TRNS, KC_TRNS , KC_TRNS , KC_TRNS , KC_TRNS , KC_TRNS , KC_TRNS , KC_TRNS, KC_TRNS, KC_TRNS,
-		          KC_TRNS , KC_HASH , KC_TRNS , KC_MS_U , KC_TRNS , KC_TRNS , KC_TRNS , KC_TRNS,               KC_TRNS, KC_TRNS , KC_TRNS , KC_BTN1 , KC_UP   , KC_BTN2 , RGB_SAI , RGB_SAD, KC_TRNS, KC_TRNS,
-		          KC_TRNS , KC_TRNS , KC_MS_L , KC_MS_D , KC_MS_R , KC_TRNS , KC_TRNS , KC_TRNS,               KC_TRNS, KC_TRNS , KC_TRNS , KC_LEFT , KC_DOWN , KC_RGHT , RGB_VAI , RGB_VAD, KC_TRNS,
-		          KC_TRNS , KC_TRNS , KC_TRNS , KC_TRNS , KC_TRNS , KC_TRNS , KC_CSGLA, KC_TRNS,               KC_TRNS, KC_CSGRA, KC_TRNS , KC_TRNS , KC_TRNS , KC_TRNS , RGB_SPI , RGB_SPD,
+		          KC_TRNS , MS_ACL0 , MS_ACL1 , MS_ACL2 , KC_TRNS , KC_TRNS , KC_TRNS , KC_TRNS,               KC_TRNS, KC_TRNS , KC_TRNS , KC_TRNS , KC_TRNS , KC_TRNS , KC_TRNS , KC_TRNS, KC_TRNS, KC_TRNS,
+		          KC_TRNS , KC_HASH , KC_TRNS , MS_UP   , KC_TRNS , KC_TRNS , KC_TRNS , KC_TRNS,               KC_TRNS, KC_TRNS , KC_TRNS , MS_BTN1 , KC_UP   , MS_BTN2 , KC_TRNS , KC_TRNS, KC_TRNS, KC_TRNS,
+		          KC_TRNS , KC_TRNS , MS_LEFT , MS_DOWN , MS_RGHT , KC_TRNS , KC_TRNS , KC_TRNS,               KC_TRNS, KC_TRNS , KC_TRNS , KC_LEFT , KC_DOWN , KC_RGHT , KC_TRNS , KC_TRNS, KC_TRNS,
+		          KC_TRNS , KC_TRNS , KC_TRNS , KC_TRNS , KC_TRNS , KC_TRNS , KC_CSGLA, KC_TRNS,               KC_TRNS, KC_CSGRA, KC_TRNS , KC_TRNS , KC_TRNS , KC_TRNS , KC_TRNS , KC_TRNS,
 	    KC_TRNS,  KC_TRNS , KC_TRNS , KC_TRNS , KC_TRNS , KC_TRNS , KC_TRNS , KC_TRNS ,                                 KC_TRNS , KC_TRNS , KC_TRNS , KC_TRNS , KC_TRNS , KC_TRNS , KC_TRNS, KC_TRNS,
 		                                        KC_TRNS ,                     KC_TRNS ,                                 KC_TRNS ,                     KC_TRNS
-    ),
-    [_ADJUST] = LAYOUT_split_6x9_6(
-                  KC_ESC , KC_F1  , KC_F2  , KC_F3  , KC_F4  , KC_F5  , KC_F6  ,                        KC_F7, KC_F8, KC_F9, KC_F10, KC_F11, KC_F12, KC_DEL,
-		          KC_GRV , KC_1   , KC_2   , KC_3   , KC_4   , KC_5   , KC_ASTR, KC_VOLU,                          KC_PSCR, KC_INS, KC_6, KC_7, KC_8, KC_9, KC_0, KC_MINS, KC_EQL, KC_BSPC,
-		          KC_TAB , KC_Q   , KC_W   , KC_E   , KC_R   , KC_T   , KC_PGUP, KC_VOLD,                          KC_SLCT, KC_DEL, KC_Y, KC_U, KC_I, KC_O, KC_P, KC_LBRC, KC_RBRC, KC_BSLS,
-		          KC_CAPS, KC_A   , KC_S   , KC_D   , KC_F   , KC_G   , KC_PGDN, KC_MUTE,                          KC_NO, KC_5, KC_H, KC_J, KC_K, KC_L, KC_SCLN, KC_QUOT, KC_ENT,
-		          KC_LSFT, KC_Z   , KC_X   , KC_C   , KC_V   , KC_B   , KC_NO  , KC_HOME,                          KC_PGUP, KC_NO, KC_N, KC_M, KC_COMM, KC_DOT, KC_SLSH, KC_LSFT,
-	    KC_LCTL,  KC_LGUI, KC_LALT, KC_LEFT, KC_RGHT, KC_SPC , KC_BSPC, KC_END ,                   KC_PGDN, KC_LSFT, KC_ENT, KC_NO, KC_NO, KC_NO, KC_LGUI, KC_LCTL,
-		                                     QK_GESC,                   KC_4   ,                                   KC_6,           KC_LALT
     )
-    // [_KEYCAPS] = LAYOUT_split_6x9_6(
-    //     // This layer is not accessible. This is intended for a guide when placing Keycaps.
-    //               KC_ESC , KC_F1  , KC_F2  , KC_F3  , KC_F4  , KC_F5  , KC_F6  ,                          KC_F7  , KC_F8  , KC_F9  , KC_F10 , KC_F11, KC_F12 , KC_DEL ,
-	// 	          KC_GRV , KC_1   , KC_2   , KC_3   , KC_4   , KC_5   , KC_ASTR, KC_VOLU,                          KC_PSCR, KC_INS , KC_6   , KC_7  , KC_8   , KC_9   , KC_0   , KC_MINS, KC_EQL , KC_BSPC,
-	// 	          KC_TAB , KC_Q   , KC_W   , KC_E   , KC_R   , KC_T   , KC_PGUP, KC_VOLD,                          KC_SLCT, KC_DEL , KC_Y   , KC_U  , KC_I   , KC_O   , KC_P   , KC_LBRC, KC_RBRC, KC_BSLS,
-	// 	          KC_CAPS, KC_A   , KC_S   , KC_D   , KC_F   , KC_G   , KC_PGDN, KC_MUTE,                          KC_NO  , KC_5   , KC_H   , KC_J  , KC_K   , KC_L   , KC_SCLN, KC_QUOT, KC_ENT ,
-	// 	          KC_LSFT, KC_Z   , KC_X   , KC_C   , KC_V   , KC_B   , KC_NO  , KC_HOME,                          KC_PGUP, KC_NO  , KC_N   , KC_M  , KC_COMM, KC_DOT , KC_SLSH, KC_LSFT,
-	//     KC_LCTL,  KC_LGUI, KC_LALT, KC_LEFT, KC_RGHT, KC_SPC , KC_BSPC, KC_END ,                 KC_PGDN, KC_LSFT, KC_ENT , KC_DOWN, KC_UP  , KC_NO , KC_LGUI, KC_LCTL,
-	// 	                                     QK_GESC,                   KC_4   ,                                   KC_6,            KC_LALT
-    // )
 };
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
@@ -188,11 +169,11 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         /* Switch between tabs. (Control + Tab). */                         /* Switch between open apps on Mac. (Command + Tab + timer logic) */
         [_QWERTY] =  { ENCODER_CCW_CW(C(KC_TAB), S(C(KC_TAB))),             ENCODER_CCW_CW(CMD_TAB_CCW, CMD_TAB_CW)  },
         /* Scrolls left & right. (Shift + Mouse Wheel Up). */               /* Scrolls up and down. (Page Down & Page Up - mouse wheel scroll incraments are too small) */
-        [_LOWER] =  { ENCODER_CCW_CW(S(KC_MS_WH_UP), S(KC_MS_WH_DOWN)),     ENCODER_CCW_CW(KC_PGDN, KC_PGUP)  },
+        [_LOWER] =  { ENCODER_CCW_CW(MS_WHLL, MS_WHLR),                      ENCODER_CCW_CW(KC_PGDN, KC_PGUP)  },
         /* Selects adjacent words. (Command + Shift + Right Arrow). */      /* Jumps to end/start of line. Hold shift to select. (Gui + arrow). */
         [_RAISE] =  { ENCODER_CCW_CW(C(S(KC_LEFT)), C(S(KC_RGHT))),         ENCODER_CCW_CW(G(KC_LEFT), G(KC_RGHT))  },
         /* Scroll through RGB Modes */                                      /* Right & left arrow */
-        [_ADJUST] = { ENCODER_CCW_CW(RGB_RMOD, RGB_MOD),                    ENCODER_CCW_CW(KC_LEFT, KC_RGHT) },
+        // [_ADJUST] = { ENCODER_CCW_CW(KC_TRNS, KC_TRNS),                      ENCODER_CCW_CW(KC_LEFT, KC_RGHT) },
     };
 #endif
 
