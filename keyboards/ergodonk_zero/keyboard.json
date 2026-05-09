@@ -18,8 +18,12 @@
         "encoder": true,
         "encoder_map": true,
         "extrakey": true,
+        "haptic": true,
         "mousekey": true,
-        "nkro": true,
+        "nkro": true
+    },
+    "haptic": {
+        "driver": "solenoid"
     },
     "matrix_pins": {
         "cols": ["GP13", "GP26", "GP5", "GP27", "GP4", "GP28", "GP3", "GP29", "GP15"],

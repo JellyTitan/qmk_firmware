@@ -1,7 +1,9 @@
-// Copyright 2023 Ryan Neff (@Ryan Neff)
+// Copyright 2023 Ryan Neff (@JellyTitan)
 // SPDX-License-Identifier: GPL-2.0-or-later
 
 #pragma once
+
+#define EE_HANDS
 
 #define RP2040_BOOTLOADER_DOUBLE_TAP_RESET
 #define RP2040_BOOTLOADER_DOUBLE_TAP_RESET_TIMEOUT 500U
@@ -18,4 +20,4 @@
 #define BOOTMAGIC_LITE_COLUMN 1
 
 #define BOOTMAGIC_LITE_ROW_RIGHT 6
-#define BOOTMAGIC_LITE_COLUMN_RIGHT 7
+#define BOOTMAGIC_LITE_COLUMN_RIGHT 1

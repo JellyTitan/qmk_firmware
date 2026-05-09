@@ -10,15 +10,16 @@ ErgoDonk Zero is a 6×9+6 keys split ortholinear keyboard with encoder & solenoi
 * Hardware Supported: ErgoDonk Zero
 * Hardware Availability: https://github.com/JellyTitan/ErgoDonk-Zero
 
-Remember you have to flash both halves of the keyboard for it to work!
+Each half must be flashed separately with its correct handedness. Connect each half individually via USB and run the appropriate command:
 
-Make example for this keyboard (after setting up your build environment):
+    `qmk flash -kb ergodonk_zero -km default -bl uf2-split-left`   # flash the left half
+    `qmk flash -kb ergodonk_zero -km default -bl uf2-split-right`  # flash the right half
 
-    `make ergodonk_zero:default`
+This only needs to be done once per half — the handedness is stored in EEPROM and persists across firmware updates. After the initial flash, either half can be connected to USB.
 
-Flashing example for this keyboard:
+To re-flash without changing handedness:
 
-    `make ergodonk_zero:default:flash`
+    `qmk flash -kb ergodonk_zero -km default`
 
 See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_tools) and the [make instructions](https://docs.qmk.fm/#/getting_started_make_guide) for more information. Brand new to QMK? Start with our [Complete Newbs Guide](https://docs.qmk.fm/#/newbs).
 
