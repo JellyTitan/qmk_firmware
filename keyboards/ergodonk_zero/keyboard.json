@@ -1,6 +1,6 @@
 {
-    "keyboard_name": "ErgoDonk Zero",
     "manufacturer": "Ryan Neff",
+    "keyboard_name": "ErgoDonk Zero",
     "maintainer": "Ryan Neff <github@JellyTitan.com>",
     "bootloader": "rp2040",
     "bootloader_instructions": "Hold the BOOT button while plugging in the usb cable",
@@ -12,11 +12,8 @@
     },
     "features": {
         "bootmagic": true,
-        "command": false,
-        "console": false,
         "dynamic_tapping_term": true,
         "encoder": true,
-        "encoder_map": true,
         "extrakey": true,
         "haptic": true,
         "mousekey": true,
@@ -45,10 +42,10 @@
                 "rows": ["GP26", "GP14", "GP10", "GP11", "GP12", "GP13"]
             }
         },
-        "soft_serial_pin": "GP1",
         "serial": {
             "driver": "vendor"
         },
+        "soft_serial_pin": "GP1",
         "transport": {
             "sync": {
                 "layer_state": true
