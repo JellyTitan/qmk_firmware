@@ -12,8 +12,9 @@
 #define HAPTIC_OFF_IN_LOW_POWER 1
 
 // The left hand matrix at 0,0 is not used, 'Esc' is at 0,1.
-#define BOOTMAGIC_LITE_ROW 0
-#define BOOTMAGIC_LITE_COLUMN 1
+#define BOOTMAGIC_ROW 3
+#define BOOTMAGIC_COLUMN 4
 
-#define BOOTMAGIC_LITE_ROW_RIGHT 6
-#define BOOTMAGIC_LITE_COLUMN_RIGHT 1
+// // When flashing, the right hand is perceived as the left hand, 'j' is at 3,4 on the swapped matrix.
+// #define BOOTMAGIC_LITE_ROW_RIGHT 3
+// #define BOOTMAGIC_LITE_COLUMN_RIGHT 4
